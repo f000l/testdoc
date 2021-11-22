@@ -13,11 +13,11 @@ jobs:
         with:
           python-version: 3.x
           
-      - run: ls
+#      - run: ls
       - run: docker pull foliant/foliant #
       - run: docker-compose build #
       - run: docker-compose run --rm foliant make site
-      - run: ls
+ #     - run: ls
       - run: git status
       - run: git add docs.mkdocs
       - run: git status
