@@ -24,8 +24,6 @@ jobs:
       - run: git config --global user.email "andrglad@gmail.com.com"
       - run: git config --global user.name "Andrey Gladilin"
       - run: git commit -m "Automatic deploy"
-      - run: git config pull.rebase false
-      - run: git pull
       - run: git subtree push --prefix docs.mkdocs origin gh-pages
       - run: git push
-      - run: git add docs.mkdocs && git commit -m "Initial dist subtree commit"    
+      - run: git add docs.mkdocs && git commit -m "Initial dist subtree commit"
