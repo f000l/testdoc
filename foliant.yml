@@ -19,5 +19,5 @@ backend_config:
       site_url: http://example.com
       site_author: AG
       theme:
-      name: material
-      custom_dir: overrides
+        name: material
+        custom_dir: overrides
