@@ -3,6 +3,7 @@ title: test
 
 chapters:
   - index.md
+  - test.md
 
 backend_config:
   mkdocs:
