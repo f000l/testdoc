@@ -18,5 +18,3 @@ backend_config:
       site_name: Custom Title
       site_url: http://example.com
       site_author: AG
-      theme:
-        name: material
