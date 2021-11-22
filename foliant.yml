@@ -3,8 +3,23 @@ title: test
 
 chapters:
   - index.md
-  - test.md
-  - test3.md
+  - Руководство по эксплуатации:
+    - Osnovnye_ponyatiya.md
+    - O_produkte.md
+    - Trebovaniya_k_rabochemu_mestu_polzovatelya.md
+    - Работа с приложением:
+      - Autentifikaciya_polzovatelya.md
+      - Osnovnoe_menu.md
+      - Проекты:
+        - Проекты: Projects.md
+        - Правила: Pravila.md
+        - Профиль: Profile.md
+        - Результаты сканирований: Rezultaty_skanirovanij.md
+        - Работа со сканированиями:
+          - Запуск сканирования: Zapusk_skanirovaniya.md
+  - Руководство по установке и обновлению: AAG.md
+  - Рекомендации по безопасной разработке приложений: RG.md
+    
 
 backend_config:
   mkdocs:
@@ -18,10 +33,6 @@ backend_config:
       site_name: Custom Title
       site_url: http://example.com
       site_author: AG
-      nav: 
-        - index.md
-        - test.md
-        - test3.md
       theme:
         name: material
         language: ru
@@ -31,3 +42,10 @@ backend_config:
           - navigation.instant
           - navigation.tabs
           - navigation.tabs.sticky
+  pandoc:
+    params:
+#      pdf_engine: xelatex
+      listings: false
+      number_sections: false
+    vars:
+      lang: ru
