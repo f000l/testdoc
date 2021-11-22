@@ -20,12 +20,3 @@ backend_config:
       site_author: AG
       theme:
         name: material
-        language: ru
-        custom_dir: overrides
-        features:
-          - navigation.indexes
-          - content.tabs.link
-          - navigation.instant
-          - navigation.tabs
-          - navigation.tabs.sticky
-
