@@ -2,8 +2,8 @@ title: test
 
 
 chapters:
-  - index.md
-  - Руководство по эксплуатации:
+  - Home: index.md
+  - Руководство пользователя:
     - Osnovnye_ponyatiya.md
     - O_produkte.md
     - Trebovaniya_k_rabochemu_mestu_polzovatelya.md
@@ -30,18 +30,47 @@ backend_config:
     use_headings: true
     default_subsection_title: Expand
     mkdocs.yml:
-      site_name: Custom Title
-      site_url: http://example.com
+      site_name: Stingray
+      site_url: https://stingray-mobile.ru/
       site_author: AG
+      repo_url: https://github.com/andrglad/testdoc
       theme:
         name: material
         language: ru
+        logo: img/logo.png
         features:
           - navigation.indexes
           - content.tabs.link
           - navigation.instant
           - navigation.tabs
           - navigation.tabs.sticky
+        palette: # 
+          - scheme: default
+            toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+          - scheme: slate # 
+            toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+
+      plugins:
+        - search:
+            lang: # 
+              - en
+              - ru
+        - git-revision-date
+      extra:
+        alternate:
+          - name: English
+            link: /en/ # 
+            lang: en
+          - name: Deutsch
+            link: /de/
+            lang: de
+          - name: Русский
+            link: /ru/
+            lang: ru      
   pandoc:
     params:
 #      pdf_engine: xelatex
